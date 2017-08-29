@@ -76,11 +76,9 @@ Click `start` > type `git bash` > Right-Click the program to run as Administrato
 
 Running these commands should confirm that they are installed and ready to use
 
-```sh
-node --version
-npm --version
+- `node --version` should return `v8.4.0`
+- `npm --version` should return `5.3.0`
 
-```
 
 ## [Visual Studio Code](https://code.visualstudio.com/)
 
