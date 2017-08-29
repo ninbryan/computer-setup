@@ -37,6 +37,13 @@ nvm alias default 8.4.0
 
 ```
 
+Get [Git](https://git-scm.com/) installed for version control!
+```sh
+brew install git
+```
+
+
+
 ### Node.js Setup For Windows
 
 expect to install
@@ -59,12 +66,11 @@ nvm alias default 8.4.0
 
 ```
 
-After installing `choco`, make life in Windows easier with the 
-Running this script will include [Git](https://git-scm.com/) and [Git BASH](https://git-for-windows.github.io/)
+After installing `choco`, make life in Windows easier by running this script to install [Git](https://git-scm.com/) and [Git BASH](https://git-for-windows.github.io/)
 ```bat
 choco install -y git
 ```
-click `start` > type `git bash` > select the software 
+Click `start` > type `git bash` > Right-Click the program to run as Administrator
 
 ### Node.js Confirm Installation
 
