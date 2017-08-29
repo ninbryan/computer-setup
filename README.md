@@ -1,6 +1,6 @@
 setting up preferred workspace environment
 
-## Node.js
+## [Node.js](https://nodejs.org/)
 
 There are different installation processes, and the normal way is clicking yes many times and/or click & dragging the icon to the Application folder. There will be times I may forget to setup the `Environment Variables` or the `$PATH`.
 
@@ -81,3 +81,18 @@ node --version
 npm --version
 
 ```
+
+## [Visual Studio Code](https://code.visualstudio.com/)
+
+Current Favorite Editor includes git support and syntax highlighting along with integrated terminal by toggling `Control + ~`
+
+On Mac Terminal:
+```sh
+brew cask install visual-studio-code
+```
+
+On Windows Command Prompt as Administrator: 
+```bat
+choco install -y visualstudiocode
+```
+
