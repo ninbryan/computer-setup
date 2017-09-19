@@ -32,16 +32,16 @@ Get [Git](https://git-scm.com/) installed for version control!
 brew install git
 ```
 
-
-
 ### Node.js Setup For Windows
 
 expect to install
 
 - [Chocolatey - The package manager for Windows](https://chocolatey.org/)
+- [Node.js](https://nodejs.org/)
+
+extra:
 - [nvm for windows](https://github.com/coreybutler/nvm-windows)
   - [important notes](https://github.com/creationix/nvm#important-notes)
-- [Node.js](https://nodejs.org/)
 
 #### The quick batch snippet to install on Windows!
 
@@ -50,16 +50,19 @@ Right clicking shows the menu option.
 
 ```bat
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
-choco install -y nvm
-nvm install 8.4.0
-nvm alias default 8.4.0
-
+choco install -y nodejs
 ```
 
-After installing `choco`, make life in Windows easier by running this script to install [Git](https://git-scm.com/) and [Git BASH](https://git-for-windows.github.io/)
+Get [Git](https://git-scm.com/) installed for version control! Includes [Git BASH](https://git-for-windows.github.io/)
 ```bat
 choco install -y git
 ```
+
+For any possible line-ending issues with git
+```bat
+git config --global core.autocrlf false
+```
+
 Click `start` > type `git bash` > Right-Click the program to run as Administrator
 
 ### Node.js Confirm Installation
