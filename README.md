@@ -69,7 +69,7 @@ Click `start` > type `git bash` > Right-Click the program to run as Administrato
 
 Running these commands should confirm that they are installed and ready to use
 
-- `node --version` should return `v8.4.0`
+- `node --version` should return `v8.5.0`
 - `npm --version` should return `5.3.0`
 
 
