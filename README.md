@@ -13,7 +13,7 @@ expect to install
 extra:
 - [nvm - Node Version Manager](https://github.com/creationix/nvm)
 
-expect to overwrite `~/.bashrc`
+expect to overwrite `~/.bashrc` & `~/.bash_profile`
 
 #### The quick bash snippet to install on Mac!
 
@@ -58,19 +58,21 @@ Get [Git](https://git-scm.com/) installed for version control! Includes [Git BAS
 choco install -y git
 ```
 
-For any possible line-ending issues with git
-```bat
-git config --global core.autocrlf false
-```
-
-Click `start` > type `git bash` > Right-Click the program to run as Administrator
-
 ### Node.js Confirm Installation
 
 Running these commands should confirm that they are installed and ready to use
 
 - `node --version` should return `v8.5.0`
 - `npm --version` should return `5.3.0`
+
+## Git Tips
+
+
+For any possible line-ending issues with git
+```bat
+git config --global core.autocrlf false
+```
+More details from this GitHub article: [dealing with line endings](https://help.github.com/articles/dealing-with-line-endings/)
 
 
 ## [Visual Studio Code](https://code.visualstudio.com/)
