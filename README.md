@@ -7,10 +7,11 @@ There are different installation processes, and the normal way is clicking yes m
 ### Node.js Setup For Mac
 
 expect to install
-
 - [Homebrew](https://brew.sh/)
-- [nvm - Node Version Manager](https://github.com/creationix/nvm)
 - [Node.js](https://nodejs.org/)
+
+extra:
+- [nvm - Node Version Manager](https://github.com/creationix/nvm)
 
 expect to overwrite `~/.bashrc`
 
@@ -22,19 +23,8 @@ click `command + space` > type `terminal` > click `enter`
 ```sh
 # install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install nvm
-cd ~ # go to HOME directory
-echo '# This loads nvm
-export NVM_DIR="$HOME/.nvm"
-nvm_sh_dir=`brew --prefix nvm`
-[ -f "$nvm_sh_dir/nvm.sh" ] && . "$nvm_sh_dir/nvm.sh"
-unset nvm_sh_dir
-' >> ~/.bashrc
-# start using nvm
-source ~/.bashrc
-nvm install 8.4.0
-nvm alias default 8.4.0
-
+# install long term support
+brew install node
 ```
 
 Get [Git](https://git-scm.com/) installed for version control!
