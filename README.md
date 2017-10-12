@@ -58,12 +58,20 @@ Get [Git](https://git-scm.com/) installed for version control! Includes [Git BAS
 choco install -y git
 ```
 
+### Node.js Setup for [Various flavors of] Linux
+
+Node.js actually has a [webpage for downloading with respective package managers](https://nodejs.org/en/download/package-manager/)
+
+![random image](https://placeimg.com/200/200/animals)
+
 ### Node.js Confirm Installation
 
 Running these commands should confirm that they are installed and ready to use
 
 - `node --version` should return `v8.5.0`
 - `npm --version` should return `5.3.0`
+
+---
 
 ## Git Tips
 
@@ -74,6 +82,7 @@ git config --global core.autocrlf false
 ```
 More details from this GitHub article: [dealing with line endings](https://help.github.com/articles/dealing-with-line-endings/)
 
+---
 
 ## [Visual Studio Code](https://code.visualstudio.com/)
 
