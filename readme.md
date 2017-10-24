@@ -8,7 +8,7 @@ open the terminal and copy one of the following:
 
 ## Node.js Setup for Windows
 
-Review the instructions [here!](./windows-install-chocolatey.md)
+Review the instructions [here!](./windows-powershell-install-chocolatey.md)
 
 ## Node.js Setup for [Various flavors of] Linux
 
