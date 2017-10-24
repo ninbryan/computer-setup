@@ -1,7 +1,10 @@
 # Windows Powershell install Chocolatey
 
-To download [chocolatey](https://chocolatey.org/) to simplify installing software,
-we must first access Windows Powershell as Administrator
+Download [chocolatey](https://chocolatey.org/) to simplify installing software.
+
+To Install Chocolatey, you must...
+
+## Open Windows Powershell as Administrator
 
 1. Click `Windows` Button
 2. Type `powershell`
@@ -10,16 +13,35 @@ we must first access Windows Powershell as Administrator
 
 At this point, you should be in a window that says `Administrator: Windows Powershell`
 
-5. Type `cd $HOME` or `cd ~` to change directory to your user directory
-6. Copy & Paste the following: 
+5. Type `cd $HOME` or `cd ~` and then click `enter` to change to your user directory
+
+## Install Chocolatey
+
+You must be in Windows Powershell as Administrator to do the following steps:
+
+1. Copy & Paste the following: 
   > ```
   > Set-ExecutionPolicy Bypass; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
   > ```
   > more info [here](https://chocolatey.org/install#install-with-powershellexe)
 
-7. Click `enter`
-8. Click `a` and then `enter`
-9. Wait until complete
-10. After waiting, type `choco --help` and then click `enter` -- this should output the information on chocolatey commands
+2. Click `enter`
+3. Type `a` and then `enter`
+4. Wait until complete
+5. After waiting, type `choco --help` and then click `enter` -- this should output the information on chocolatey commands
 
-If there something different happens, please let me know.
+## Choco Install Node.js & Git
+
+Open Windows Powershell as Administrator and have Chocolatey installed to easily install Node.js and Git
+
+1. Copy & Paste the following:
+  > ```bat
+  > choco install -y nodejs
+  > choco install -y git
+  > ```
+2. Click `enter`
+3. Wait until complete... may need to hit `enter` a bunch of times...
+4. After it is complete, type `exit` and then click `enter`
+5. open powershell
+6. type `node -v` and then click `enter` -- it should return the nodejs version
+7. type `git` and then click `enter` -- it should return information about git
