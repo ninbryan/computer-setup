@@ -1,10 +1,14 @@
 # TODO - need to test
 
-sudo apt-get install -y build-essential # Install the build-essential package - let this run to completion
-sudo apt-get install -y libssl-dev # Install the libssl-dev package - also let this one run to completion
+if [ ! $(command -v nvm) ] ; then
+  wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+  echo 'export NVM_DIR="$HOME/.nvm"' >> $HOME/.bashrc
+  echo '[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm' >> $HOME/.bashrc
+  source $HOME/.bashrc
+fi
 
-# Download and install NVM
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+echo "nvm $(nvm -v)"
+
 nvm install node
 nvm use node
 
