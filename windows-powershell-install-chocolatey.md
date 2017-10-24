@@ -1,6 +1,6 @@
 # Windows Powershell install Chocolatey
 
-Download [chocolatey](https://chocolatey.org/) to simplify installing software.
+Download [Chocolatey](https://chocolatey.org/) to simplify installing software.
 
 To Install Chocolatey, you must...
 
