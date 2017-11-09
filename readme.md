@@ -2,9 +2,16 @@ setting up preferred workspace environment
 
 ## Node.js Setup for Mac
 
-open the terminal and copy one of the following:
-- [Brew Install Node](./mac-install-node.bash)
-- [Brew Install NVM](./mac-install-nvm.bash)
+open the terminal and copy any of the following:
+
+### [brew install node](./mac-install-node.bash)
+`curl -o- https://raw.githubusercontent.com/ninbryan/computer-setup/master/mac-install-node.bash | bash`
+
+### [brew install nvm](./mac-install-nvm.bash) if you want to try [Node Version Manager](https://github.com/creationix/nvm)
+`curl -o- https://raw.githubusercontent.com/ninbryan/computer-setup/master/mac-install-nvm.bash | bash`
+
+### [brew install git](./mac-install-git.bash) for version control with [Git](https://git-scm.com/)
+`curl -o- https://raw.githubusercontent.com/ninbryan/computer-setup/master/mac-install-git.bash | bash`
 
 ## Node.js Setup for Windows
 
