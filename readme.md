@@ -29,11 +29,12 @@ I have not tested this though
 
 ## Git Tips
 
-
 For any possible line-ending issues with git
-```bat
+
+```bash
 git config --global core.autocrlf false
 ```
+
 More details from this GitHub article: [dealing with line endings](https://help.github.com/articles/dealing-with-line-endings/)
 
 ---
@@ -43,12 +44,13 @@ More details from this GitHub article: [dealing with line endings](https://help.
 Current Favorite Editor includes git support and syntax highlighting along with integrated terminal by toggling `Control + ~`
 
 On Mac Terminal:
+
 ```sh
 brew cask install visual-studio-code
 ```
 
-On Windows Command Prompt as Administrator: 
-```bat
-choco install -y visualstudiocode
-```
+On Windows Git Bash as Administrator:
 
+```bash
+choco install vscode -y
+```
