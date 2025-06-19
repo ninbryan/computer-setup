@@ -9,9 +9,7 @@ Following these Instructions results:
   - Node.js; LTS version of JavaScript Runtime environment
   - VSCode; neat web development code editor
 - adding files to HOME Directory:
-  - `~/.bash_profile`
   - `~/.bashrc`
-  - `~/.node-version`
 
 
 Download [Chocolatey](https://chocolatey.org/) to simplify installing software.
@@ -37,7 +35,7 @@ You must be in Windows Powershell as Administrator to do the following steps:
   > ```
   > Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
   > ```
-  > more info [here](https://chocolatey.org/install)
+  > more info at https://chocolatey.org/install#individual
 
 2. Click `enter`
 4. Wait until complete
@@ -88,7 +86,7 @@ test -f ~/.profile && . ~/.profile
 test -f ~/.bashrc && . ~/.bashrc
 ' >> ~/.bash_profile
 
-# install and use latest lts
+# install and use latest NodeJS at LTS
 fnm install lts-latest
 fnm use lts-latest
 fnm default lts-latest
