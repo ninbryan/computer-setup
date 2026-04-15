@@ -18,6 +18,7 @@ To Install Chocolatey, you must...
 
 ## Open Windows Powershell as Administrator
 
+0. Turn on computer.
 1. Click `Windows` Button
 2. Type `powershell`
 3. Click `ctrl` + `shift` + `enter`
@@ -26,11 +27,11 @@ To Install Chocolatey, you must...
 At this point, you should be in a window that says `Administrator: Windows Powershell`
 
 5. Type `cd $HOME` or `cd ~` and then click `enter` to change to your user directory
+6. OPTIONAL: you can disable the Prompt in User Account Control Settings according to [this article](https://support.microsoft.com/en-us/windows/user-account-control-settings-d5b2046b-dcb8-54eb-f732-059f321afe18)
 
 ## Install Chocolatey
 
-You must be in Windows Powershell as Administrator to do the following steps:
-
+0. You must open Windows Powershell as Administrator to do the following steps.
 1. Copy & Paste the following:
   > ```
   > Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
@@ -43,8 +44,7 @@ You must be in Windows Powershell as Administrator to do the following steps:
 
 ## choco install all the software
 
-Open Windows Powershell as Administrator and have Chocolatey installed to easily install multiple software programs
-
+0. Open Windows Powershell as Administrator and have Chocolatey installed to easily install multiple software programs
 1. Copy & Paste the following:
   > ```
   > choco install git fnm vscode -y
@@ -54,6 +54,20 @@ Open Windows Powershell as Administrator and have Chocolatey installed to easily
 4. After it is complete, type `exit` and then click `enter`
 5. open powershell
 6. type `git` and then click `enter` -- it should return information about git
+
+## Install VSCode Extensions through CLI
+
+0. Open Windows Powershell as Administrator and have Chocolatey installed
+1. Install VSCode in following manner of choco to enable [VSCode Command Line](https://code.visualstudio.com/docs/configure/command-line):  
+  > ```
+  > choco install vscode -y  
+  > ```
+2. After successful choco install of VSCode, `code` command should be available in Powershell.
+   So... confirm `code` command works.
+3. Install VSCode Extensions:
+  > ```
+  > code --install-extension ms-vscode.remote-explorer ms-vscode-remote.remote-wsl ms-vscode-remote.remote-ssh ms-vscode-remote.remote-ssh-edit
+  > ```
 
 ## Use fnm to manage node versions
 
